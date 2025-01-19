@@ -1,0 +1,117 @@
+<!--Asg2_SYAHRIL RUMIZAM BIN ABDUL RAZAK_2024568363_RCDCS2514A-->
+<!--https://syahril61.github.io/Assignment2/-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="harum manis.css" />
+        <title>UiTM Perlis Harum Manis Mangoes</title>
+    </head>
+    <body onload="Time()" class="background">
+        <div class="navbar">
+            <button type="button" id="button1" onclick="mainFunction()">
+                MAIN
+            </button>
+            <button type="button" id="button2" onclick="benefitFunction()">
+                BENEFITS
+            </button>
+            <button type="button" id="button3" onclick="locationFunction()">
+                UITM ARAU
+            </button>
+        </div>
+        <!--tab for main page-->
+        <div id="main">
+            <h1>About Harum Manis</h1>
+            <aside>
+                UiTM Perlis is one of the place that works on growing Harum
+                Manis in Perlis. this UiTM is located in Arau where it is one of
+                the best city in Perlis to grow Harum Manis. <br />
+                Maps: if you wish to find route to visit
+                <span>
+                    <button onclick="locationFunction()" id="locationspan">
+                        UiTM Arau
+                    </button>
+                </span>
+            </aside>
+            <p id="about">
+                Harum Manis is a variety of mango that is grown and available in
+                Perlis, state of Malaysia. "Harum" means fragrant while "Manis"
+                means sweet, indicating that this type of mango is both fragrant
+                and sweet. It is also known for the creamy texture and strong
+                aroma that distinguish Harum Manis from other mangoes. Harum Manis can only be grown in specific environment that result in Perlis being the most suitable place to grow it
+            </p>
+            <img src="Mango.jpg" alt="mango" />
+            <p id="about">
+                Mango is one of the popular tropical fruit that is loved by many
+                because of their taste which can be used for a lot of recipe.
+                They can be used for cooking, beverage and dessert. Harum Manis
+                is a more popular variety of Mango because it elevate these
+                recipe even more and thus cost much higher than other mangoes.
+                They are also delicious to eat as they are
+            </p>
+        </div>
+        <!--tab for benefit-->
+        <div id="benefit">
+            <h1>Benefits of Harum Manis</h1>
+            <p id="about">
+                They are a lot of benefits from consuming Harum Manis
+            </p>
+            <ul class="list">
+                <li onmouseover="expand(0)" onmouseout="normal(0)">Vitamin</li>
+                <li onmouseover="expand(1)" onmouseout="normal(1)">Fiber</li>
+                <li onmouseover="expand(2)" onmouseout="normal(2)">Hydration</li>
+                <div id="about" style="background-color: white; width: 70%; margin-top: 100px; border: 1px solid black;">
+                    <p id="about">
+                        <i style="padding: 15px;">Hover on the benefit to see what they actually contribute</i>
+                        <span class="explain">
+                            Harum Manis contains a lot of Vitamin such as vitamin A,
+                            vitamin B6 and vitamin C which help in improving
+                            immunity system also eyes and brain function. vitamin also able to contribute to healthier skin
+                        </span>
+                        <span class="explain">
+                            Contents juice that can keep us hydrate
+                        </span>
+                        <span class="explain">
+                            Help digestion system
+                        </span>
+                    </p>
+                </div>
+            </ul>
+        </div>
+        <!--tab for location-->
+        <div id="location">
+            <h1>Location of UiTM Arau, Perlis</h1>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7929.14719071207!2d100.27733220641696!3d6.4487516254347215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304ca295f1a2ba0f%3A0xb6486842508be519!2sUitm%20Arau%2C%2002600%20Arau%2C%20Perlis!5e0!3m2!1sen!2smy!4v1736232578692!5m2!1sen!2smy"
+                width="600"
+                height="450"
+                style="border: 1px solid black; margin: 20px"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <p id="about">
+                
+                Do remember to check the time before you plan on visiting. <i>UiTM Perlis open from 9am until 5pm</i> <br>
+                current time : <span id="time"></span><br><br>
+                if you wish to contact, please input your name firsthand: 
+                <input type="text" placeholder="Your Name" id="name">
+                <button type="button" onclick="submitFunction()">Submit</button>
+                <div id="entertext"> </div>
+                <span id="ws"><a href="https://wa.me/+60186634686?text=Hello%20I%20would%20like%20more%20information%20about%20Harum%20Manis%20UiTM%20Perlis" target="_blank">Syahril Rumizam</a></span>
+                <br><br>        
+                here is the link that would open google map site: 
+                <a href="//maps.app.goo.gl/iuZ4UVKwfxKykjJ67" target="_blank"
+                    >UiTM Arau, Perlis</a
+                >
+            </p>
+        </div>
+        <script src="harum manis.js"></script>
+    </body>
+    <footer>
+        <p style="margin-top: 10px;">
+            &copy; Made by Syahril and only intended for study and development
+        </p>
+    </footer>
+</html>
